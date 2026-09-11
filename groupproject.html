@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Evans' Notebook</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Personal</h1>
+    <p>Evans Kumi, Fall 2026 and CRN 526</p>
+  </header>
+
+  <nav class="notebook-nav">
+    <a href="index.html" >Home</a>
+    <a href="research.html" >Research</a>
+    <a href="build.html">Build</a>
+    <a href="prototype.html">Prototype</a>
+    <a href="personal.html">Personal</a>
+    <a href="groupproject.html" class="current">Group Project</a>
+  </nav>
+
+  <main>
+    <h2>Group Project Pitch</h2>
+    <p>
+      Verification Drill Down for AI Generated Chart and Image Descriptions
+    </p>
+ 
+    <h2>Intended user group</h2>
+    <p>
+      This project is aimed at blind and low vision users who rely on AI
+      generated audio descriptions to understand charts, graphs, and other
+      visual data, whether in a classroom slide, a news article, or a
+      workplace report. 
+    </p>
+ 
+    <h2>Observation of real users</h2>
+    <p>
+      Adnin and
+      Das (2024) interviewed nineteen blind individuals who use tools like
+      Be My AI, ChatGPT, and Gemini as part of their everyday routines, and
+      found that many participants treat generative AI as an authoritative
+      source of fact rather than a system that can guess wrong, with one
+      participant describing it as the <q>king of knowledge</q>. The same
+      study documented a concrete failure case: Be My AI described a photo
+      and swapped which hand was holding a white cane and which was holding
+      a guide dog's leash, and never identified the dog as a guide dog at
+      all. Since the person asking could not see the photo themselves, they
+      had no independent way to catch either mistake. 
+    </p>
+ 
+    <h2>What is the Goal</h2>
+    <p>
+      To build a pipeline on top of existing systems. So after a chart or image goes into an existing
+      description generator, the moment a description comes back, it is
+      automatically sent straight to our own evaluation layer before a
+      person ever hears aboy it. Our layer checks the description against the
+      chart's actual data table and flags anything that does not match.
+      Hence, we can run the pipeline across many charts and catch
+      errors automatically, without setting up a live session just to find
+      out whether a given description is accurate.
+    </p>
+ 
+    <h2>Skills needed</h2>
+    <ul>
+       <li>UsingLLM API</li>
+      <li>Enough scripting, likely Python, to build a small pipeline that takes a generated description, checks it against a data source, and flags mismatches</li>
+      <li>Basic data handling to prepare chart datasets with known correct values and seed realistic errors for testing</li>
+      <li>Web development with attention to accessibility tools like screen reader compatible markup and keyboard navigation</li>
+      <li>Experience with text to speech or audio interfaces</li>
+    </ul>
+     <h2>Reference</h2>
+    <p>
+      Adnin, R., &amp; Das, M. (2024, October). <q>I look at it as the king
+      of knowledge</q>: How Blind People Use and Understand Generative AI
+      Tools. In Proceedings of the 26th International ACM SIGACCESS
+      Conference on Computers and Accessibility (pp. 1 to 14).
+    </p>
+  </main>
+
+  <footer>
+    Created by Evans Kumi. @2026. All rights reserved.
+  </footer>
+
+</body>
+</html>

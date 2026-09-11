@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Evans' Notebook</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Personal</h1>
+    <p>Evans Kumi, Fall 2026 and CRN 526</p>
+  </header>
+
+  <nav class="notebook-nav">
+    <a href="index.html" >Home</a>
+    <a href="research.html" >Research</a>
+    <a href="build.html">Build</a>
+    <a href="prototype.html">Prototype</a>
+    <a href="personal.html" class="current">Personal</a>
+    <a href="groupproject.html">Group Project</a>
+  </nav>
+
+  <main>
+    <h2>Personal Project Pitch</h2>
+    <p>
+      Content Lineage Panel for AI Generated Slide Decks
+    </p>
+ 
+    <h2>Intended user group</h2>
+    <p>
+      This project is aimed at people who use an AI tool such as PowerPoint
+      Copilot or Gamma to turn a longer document or outline into a slide
+      deck. This covers students presenting a report, professionals
+      turning a proposal into a pitch deck, and anyone else who hands a
+      document to an AI and gets slides back in return.
+    </p>
+ 
+    <h2>Observation of real users</h2>
+    <p>
+      I watched a classmate generate a slide deck from a project report
+      using an AI slide tool. The deck looked clean and well organized, but
+      once she started rehearsing, she kept finding gaps. A figure from the
+      report was missing from the slides entirely, and a limitation she had
+      written a full paragraph about had been shrunk down to a single
+      bullet point. She only noticed this while rehearsing out loud, not
+      while reading the deck on screen. This made it difficult to identify which pages were important which had been omitted.
+      This is the problem this project is aimed at solving.
+    </p>
+ 
+    <h2>What is the Goal</h2>
+    <p>
+      Is to create a basic webapp interface where the user pastes in a
+      document, an LLM API call generates slide content to generate slides, in addition in each slide a small panel lists which
+      section of the source document it came from and a short note on what
+      was condensed or left out. None of this needs any custom machine learning work, it is prompting the
+      model to also report what it kept and what it dropped, then
+      displaying that alongside the slide.  
+    </p>
+ 
+    <h2>Skills needed</h2>
+    <ul>
+      <li>Basic web development, HTML, CSS, and JavaScript for the interface and the side panel</li>
+      <li>Using LLM API and writing prompts that return structured output, such as slide text plus a lineage note</li>
+      <li>Learning slide rendering approach, either a simple custom layout or an existing library</li>
+    </ul>
+  </main>
+
+  <footer>
+    Created by Evans Kumi. @2026. All rights reserved.
+  </footer>
+
+</body>
+</html>
