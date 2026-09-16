@@ -47,7 +47,42 @@
       while reading the deck on screen. This made it difficult to identify which pages were important which had been omitted.
       This is the problem this project is aimed at solving.
     </p>
+
+    <h2>Literature review</h2>
+    <p>
+      The generation side of this problem already has research behind it.
+      Sun and colleagues frame document to slide generation as a
+      summarization task, where a model has to choose which content from a
+      longer document earns a place on a slide and which gets left out
+      (Sun et al., 2021). Fu and colleagues build this into a fuller
+      pipeline that adds retrieval and layout on top of summarization, and
+      give a concrete sense of how much of a source document actually
+      survives into a generated deck (Fu et al., 2022). Together these two
+      papers describe the exact choice point my project is meant to make
+      visible to the presenter, but neither studies what happens once a
+      person has to actually stand up and present the result, which is the
+      gap this project sits in.
+    </p>
  
+    <p>
+      The trust and verification side points more directly at my actual
+      research question. A study of AI generated summaries in mobile
+      reading found a real gap between how much people trust a summary and
+      how well they understand the source material after reading only the
+      summary, and the authors recommend labeling AI provenance and
+      offering verification prompts when accuracy matters, which is close
+      to what a content lineage panel is meant to do (Fan, Liu, and Huang,
+      2025). At the same time, a study of how people actually use
+      references offered alongside AI generated answers found that
+      engagement stayed low across nine different systems, with people
+      generally trusting an answer that sounded plausible over checking the
+      source behind it (Ouyang and Narechania, 2026). That second finding
+      is a real risk worth planning for, since adding a lineage panel does
+      not guarantee anyone opens it. My own small study would possibly measure
+      whether people actually look at the panel before a presentation, not
+      only whether the panel is accurate when they do.
+    </p>
+
     <h2>What is the Goal</h2>
     <p>
       Is to create a basic webapp interface where the user pastes in a
@@ -64,6 +99,32 @@
       <li>Using LLM API and writing prompts that return structured output, such as slide text plus a lineage note</li>
       <li>Learning slide rendering approach, either a simple custom layout or an existing library</li>
     </ul>
+
+    <h2>Reference</h2>
+    <p>
+      Sun, E., Hou, Y., Wang, D., Zhang, Y., &amp; Wan, X. (2021). D2S:
+      Document to Slide Generation Via Query Based Text Summarization. In
+      Proceedings of the 2021 Conference of the North American Chapter of
+      the Association for Computational Linguistics (NAACL HLT 2021).
+    </p>
+    <p>
+      Fu, T.-J., Wang, W. Y., McDuff, D., &amp; Song, Y. (2022). DOC2PPT:
+      Automatic Presentation Slides Generation from Scientific Documents.
+      Proceedings of the AAAI Conference on Artificial Intelligence, 36(1),
+      634 to 642.
+    </p>
+    <p>
+      Fan, G., Liu, D., &amp; Huang, Y. (2025). Skim or Swim? Investigating
+      AI Generated Summaries, Trust, and Comprehension in Chinese Mobile
+      Reading. International Journal of Human Computer Interaction, 42(12),
+      9025 to 9046.
+    </p>
+    <p>
+      Ouyang, J., &amp; Narechania, A. (2026). Analyzing the Presentation,
+      Content, and Utilization of References in LLM Powered Conversational
+      AI Systems. In Extended Abstracts of the 2026 CHI Conference on Human
+      Factors in Computing Systems (CHI EA 26).
+    </p>
   </main>
 
   <footer>
