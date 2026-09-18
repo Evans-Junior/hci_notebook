@@ -89,10 +89,50 @@
 
     <h2>What is the Goal?</h2>
     <p>
-      To create a basic webapp interface where the user pastes in a
-      document, an LLM API call generates slide content to generate slides, in addition in each slide a small panel lists which
+      To create an interface
+      layer on top of a normal document to slides pipeline. A minimal
+      version can be built with a basic web app. The user pastes in a
+      document, an LLM API call generates slide content the way these tools
+      already do, and alongside each slide a small panel lists which
       section of the source document it came from and a short note on what
       was condensed or left out. 
+    </p>
+
+    <h2>Design</h2>
+    <p>
+      The panel sits alongside the generated deck rather than inside a
+      single slide, since burying it in the slides themselves would defeat
+      the point. The current plan is a simple list, one entry
+      per omitted or condensed point, each with a short title, the page of
+      the source document it came from, and a one line note on whether it
+      was dropped entirely or just shrunk down. Clicking an entry expands
+      it to show the original wording from the source document, so the
+      student can decide on the spot whether it is worth mentioning out
+      loud or safe to leave out. The visual treatment stays plain on
+      purpose, a bordered box with clear headings, since the goal is
+      something a student actually reads in the five minutes before a
+      presentation, not a feature they have to learn.
+    </p>
+ 
+    <h2>Methodology</h2>
+    <p>
+      The evaluation is with students who
+      have used an AI tool to generate slides before. Each participant
+      brings or is given a short document and its AI generated deck, with a
+      few points deliberately dropped or condensed by the generation step.
+      Half the participants rehearse their presentation with the lineage
+      panel available, half without, then everyone switches to the other
+      condition with a second document, so order effects can be controlled
+      for. During rehearsal, a researcher plays the role of an audience
+      member and asks one question tied directly to an omitted point. The
+      main measure is <strong>whether the student can answer that question well,
+      either because the panel helped them catch the gap beforehand or
+      because they happened to know the material anyway, along with whether
+      they opened the panel at all when it was available</strong>. That second
+      measure matters because of what the literature review found, a
+      feature being accurate does not mean anyone uses it, so this study
+      needs to check actual use, not just accuracy, before claiming the
+      panel helps.
     </p>
  
     <h2>Skills needed</h2>
